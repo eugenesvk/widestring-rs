@@ -21,6 +21,10 @@ alloc = []
 # Enable to use the #[debugger_visualizer] attribute.
 debugger_visualizer = ["alloc"]
 
+[dependencies]
+rkyv	= {version="0.7.42",features=["validation"]}
+ptr_meta = "0.2.0"
+
 [dev-dependencies]
 debugger_test = "0.1"
 debugger_test_parser = "0.1"
