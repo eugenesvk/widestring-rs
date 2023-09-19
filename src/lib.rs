@@ -244,10 +244,14 @@ mod macros;
 #[cfg(feature = "std")]
 #[cfg_attr(docsrs, doc(cfg(feature = "alloc")))]
 mod platform;
+// pub mod ucstr_rkyv;
+pub mod ucstr_rkyv_impl;
 pub mod ucstr;
 #[cfg(feature = "alloc")]
 #[cfg_attr(docsrs, doc(cfg(feature = "alloc")))]
 pub mod ucstring;
+pub mod ucstring_rkyv;
+pub mod ucstring_rkyv_impl;
 pub mod ustr;
 #[cfg(feature = "alloc")]
 #[cfg_attr(docsrs, doc(cfg(feature = "alloc")))]
